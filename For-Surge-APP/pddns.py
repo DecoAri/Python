@@ -1,3 +1,6 @@
+# 教程待完善
+
+
 import json
 import requests
 from github import Github
