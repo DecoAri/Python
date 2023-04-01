@@ -22,12 +22,12 @@ def upload_file(content, access_token, owner, repo, path):
 
 ipv4 = get_ipv4()
 ipv6 = get_ipv6()
-data = {"ipv4": ipv4, "ipv6": ipv6}
-json_data = json.dumps(data, indent=4)
+data = ipv4+';'+ipv6
+#json_data = json.dumps(data, indent=4)
 
 access_token = "github_personal_access_token"
 owner = "用户名"
 repo = "用户名"
 path = "路径"
 
-upload_file(json_data, access_token, owner, repo, path)
+upload_file(data, access_token, owner, repo, path)
